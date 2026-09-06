@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kamonchanoklh.github.io/hanzidrip-pages/sitemap.xml

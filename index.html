@@ -3,7 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HanziDrip — Support</title>
+<title>HanziDrip — HSK 1-6 Chinese Vocabulary &amp; Grammar</title>
+<meta name="description" content="Every official HSK 1-6 word — 4,991 in all — in small daily batches, with grammar notes, examples, and dedicated Thai-language support. No ads, no accounts. HSK 1-2 free forever.">
+<link rel="canonical" href="https://kamonchanoklh.github.io/hanzidrip-pages/">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HanziDrip">
+<meta property="og:url" content="https://kamonchanoklh.github.io/hanzidrip-pages/">
+<meta property="og:title" content="HanziDrip — HSK 1-6 Chinese Vocabulary &amp; Grammar">
+<meta property="og:description" content="Every official HSK 1-6 word — 4,991 in all — in small daily batches, with grammar notes, examples, and dedicated Thai-language support. No ads, no accounts. HSK 1-2 free forever.">
+<meta property="og:image" content="https://kamonchanoklh.github.io/hanzidrip-pages/assets/icon-1024.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HanziDrip — HSK 1-6 Chinese Vocabulary &amp; Grammar">
+<meta name="twitter:description" content="Every official HSK 1-6 word — 4,991 in all — in small daily batches, with grammar notes, examples, and dedicated Thai-language support.">
+<meta name="twitter:image" content="https://kamonchanoklh.github.io/hanzidrip-pages/assets/icon-1024.png">
+
 <style>
   :root {
     color-scheme: light dark;
@@ -33,32 +51,81 @@
     line-height: 1.6;
   }
   .wrap {
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
     padding: 56px 24px 80px;
+  }
+  header.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 8px;
   }
   .brand {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 8px;
   }
   .brand .mark {
-    font-size: 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 22%;
+    display: block;
   }
+  .brand .wordmark { font-size: 1.3rem; font-weight: 700; }
+  .site-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+  }
+  .site-nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .site-nav a:hover,
+  .site-nav a[aria-current="page"] {
+    color: var(--accent);
+  }
+
+  .hero { margin: 40px 0 8px; }
   h1 {
-    font-size: 1.75rem;
-    margin: 0 0 4px;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0 0 16px;
   }
   .tagline {
     color: var(--muted);
-    margin: 0 0 40px;
-    font-size: 1rem;
-  }
-  h2 {
     font-size: 1.1rem;
-    margin: 40px 0 12px;
+    margin: 0 0 28px;
+    max-width: 52ch;
   }
+  .cta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .store-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--text);
+    color: var(--bg);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .cta-note {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  h2 { font-size: 1.15rem; margin: 48px 0 14px; }
   p { margin: 0 0 14px; }
   .card {
     background: var(--card);
@@ -69,7 +136,34 @@
   }
   a { color: var(--accent); }
   ul { padding-left: 20px; margin: 0 0 14px; }
-  li { margin-bottom: 6px; }
+  li { margin-bottom: 8px; }
+
+  .shots {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 4px 4px 16px;
+    margin: 0 -4px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .shots img {
+    height: 420px;
+    width: auto;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    flex: 0 0 auto;
+  }
+  .shots figure {
+    margin: 0;
+    text-align: center;
+  }
+  .shots figcaption {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-top: 8px;
+    max-width: 190px;
+  }
+
   footer {
     margin-top: 56px;
     padding-top: 20px;
@@ -82,33 +176,83 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="brand">
-    <span class="mark">滴</span>
-    <h1>HanziDrip</h1>
-  </div>
-  <p class="tagline">Learn Chinese vocabulary a little at a time — HSK 1 through 6.</p>
+  <header class="site-header">
+    <div class="brand">
+      <img class="mark" src="assets/logo-64.png" alt="" width="28" height="28">
+      <span class="wordmark">HanziDrip</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
 
+  <div class="hero">
+    <h1>All 4,991 official HSK 1–6 words. A few at a time, every day.</h1>
+    <p class="tagline">HanziDrip is a focused daily-vocabulary app for HSK exam takers and serious Chinese learners — no curated subset, no ads, no accounts. Just the full word list, taught properly.</p>
+    <div class="cta-row">
+      <a class="store-badge" href="https://apps.apple.com/th/app/hanzidrip/id6803936114">Download on the App Store</a>
+      <span class="cta-note">HSK 1-2 free forever</span>
+    </div>
+  </div>
+
+  <h2>Daily habit, real progress</h2>
   <div class="card">
-    <h2 style="margin-top:0">Need help?</h2>
-    <p>If you've run into a bug, have a question about how HanziDrip works, or want to send feedback, email us and we'll get back to you as soon as we can.</p>
-    <p><a href="mailto:kamonchanok.lh@gmail.com">kamonchanok.lh@gmail.com</a></p>
+    <ul>
+      <li>A handful of new words a day, never an overwhelming deck — tap through Still Learning, Almost There, or Learned as you go</li>
+      <li>Review mode brings words back with quick multiple-choice self-tests, timed before you'd forget them</li>
+      <li>Track your streak and see exactly where you stand across all six HSK levels</li>
+      <li>Home Screen and Lock Screen widgets put today's word one glance away</li>
+    </ul>
   </div>
 
-  <h2>Common questions</h2>
-  <p><strong>How does the daily word feature work?</strong><br>
-  HanziDrip surfaces a rotating set of vocabulary words based on your HSK level and progress, both in the app and via the home screen widget.</p>
+  <h2>Built for serious HSK study</h2>
+  <div class="card">
+    <ul>
+      <li>Every one of the 4,991 words comes with pinyin, definitions, grammar explanations, usage notes, common mistakes, and example sentences — cross-checked against known CC-CEDICT dictionary errors that trip up other Chinese-learning apps</li>
+      <li>Tap any word to hear it spoken instantly, with on-device text-to-speech — no internet required</li>
+      <li>Grammar notes written specifically for Thai speakers — direct comparisons to Thai word order, classifiers, and tone — complete for HSK 1-5, with HSK 6 rolling out level by level</li>
+      <li>Browse or search all 4,991 words anytime, and bookmark anything you want to revisit</li>
+    </ul>
+  </div>
 
-  <p><strong>Does my progress sync across devices?</strong><br>
-  Yes — your learning progress and daily word history sync privately through your own iCloud account, so they carry over between your devices signed into the same Apple ID.</p>
+  <h2>Private by design</h2>
+  <div class="card">
+    <ul>
+      <li>No account, no sign-up, no email — just open the app and start</li>
+      <li>No ads, no third-party analytics, no tracking SDKs</li>
+      <li>Your progress syncs privately across your own devices through your own iCloud account — it never touches a server we run</li>
+    </ul>
+  </div>
 
-  <p><strong>What does Premium unlock?</strong><br>
-  Premium features are purchased and managed entirely through Apple's App Store (StoreKit). You can manage or cancel a subscription anytime in your device's Settings → your name → Subscriptions.</p>
+  <h2>Free to start, Premium when you're ready</h2>
+  <div class="card">
+    <p style="margin-bottom:0">HSK 1 and HSK 2 — the first ~300 words most beginners need — are free, forever. Premium unlocks HSK 3-6, unlimited review, and a detailed progress breakdown by level.</p>
+  </div>
 
-  <p><strong>Do I need an account?</strong><br>
-  No. HanziDrip doesn't require sign-up or a username/password — it works entirely with your device and your private iCloud account.</p>
+  <h2>See it in action</h2>
+  <div class="shots">
+    <figure>
+      <img src="screenshots/01_today.png" alt="HanziDrip Today screen showing an HSK 1 word card with pinyin, a Grammar &amp; examples button, and Still Learning / Almost There / Learned buttons" loading="lazy">
+      <figcaption>Today's words, one card at a time</figcaption>
+    </figure>
+    <figure>
+      <img src="screenshots/02_review.png" alt="HanziDrip Review screen with a multiple-choice self-test asking what a word means" loading="lazy">
+      <figcaption>Review mode: quick self-tests</figcaption>
+    </figure>
+    <figure>
+      <img src="screenshots/03_today_complete.png" alt="HanziDrip screen confirming today's 10 words are done, with a streak counter and a list of today's learned words" loading="lazy">
+      <figcaption>A finished day, streak intact</figcaption>
+    </figure>
+    <figure>
+      <img src="screenshots/04_progress.png" alt="HanziDrip Progress screen showing current streak, overall progress out of 4,991 words, and a words-introduced breakdown" loading="lazy">
+      <figcaption>Progress across all 4,991 words</figcaption>
+    </figure>
+  </div>
 
   <footer>
-    <p>See our <a href="privacy.html">Privacy Policy</a>.</p>
+    <p><a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
     <p>&copy; 2026 HanziDrip.</p>
   </footer>
 </div>

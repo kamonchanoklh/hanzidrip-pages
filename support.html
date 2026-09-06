@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HanziDrip — Support</title>
+<meta name="description" content="Support and frequently asked questions for HanziDrip, the HSK 1-6 Chinese vocabulary app.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #2a5db0;
+    --border: #e4e4e4;
+    --card: #f7f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --text: #e9e9ec;
+      --muted: #a2a4ab;
+      --accent: #7aa6f0;
+      --border: #2a2d33;
+      --card: #1c1f24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  header.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand .mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 22%;
+    display: block;
+  }
+  .site-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+  }
+  .site-nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .site-nav a:hover,
+  .site-nav a[aria-current="page"] {
+    color: var(--accent);
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 4px;
+  }
+  .tagline {
+    color: var(--muted);
+    margin: 0 0 40px;
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 40px 0 12px;
+  }
+  p { margin: 0 0 14px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 8px;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site-header">
+    <div class="brand">
+      <img class="mark" src="assets/logo-64.png" alt="" width="28" height="28">
+      <h1>HanziDrip</h1>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <p class="tagline">Learn Chinese vocabulary a little at a time — HSK 1 through 6.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Need help?</h2>
+    <p>If you've run into a bug, have a question about how HanziDrip works, or want to send feedback, email us and we'll get back to you as soon as we can.</p>
+    <p><a href="mailto:kamonchanok.lh@gmail.com">kamonchanok.lh@gmail.com</a></p>
+  </div>
+
+  <h2>Common questions</h2>
+  <p><strong>How does the daily word feature work?</strong><br>
+  HanziDrip surfaces a rotating set of vocabulary words based on your HSK level and progress, both in the app and via the home screen widget.</p>
+
+  <p><strong>Does my progress sync across devices?</strong><br>
+  Yes — your learning progress and daily word history sync privately through your own iCloud account, so they carry over between your devices signed into the same Apple ID.</p>
+
+  <p><strong>What does Premium unlock?</strong><br>
+  Premium features are purchased and managed entirely through Apple's App Store (StoreKit). You can manage or cancel a subscription anytime in your device's Settings → your name → Subscriptions.</p>
+
+  <p><strong>Do I need an account?</strong><br>
+  No. HanziDrip doesn't require sign-up or a username/password — it works entirely with your device and your private iCloud account.</p>
+
+  <footer>
+    <p><a href="index.html">&larr; Back to Home</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
+    <p>&copy; 2026 HanziDrip.</p>
+  </footer>
+</div>
+</body>
+</html>

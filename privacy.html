@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HanziDrip — Privacy Policy</title>
+<meta name="description" content="HanziDrip's privacy policy: no accounts, no ads, no third-party tracking. Learning progress syncs only through your own private iCloud account.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <style>
   :root {
     color-scheme: light dark;
@@ -51,6 +54,39 @@
     padding: 18px 22px;
     margin: 20px 0;
   }
+  header.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand .mark {
+    width: 24px;
+    height: 24px;
+    border-radius: 22%;
+    display: block;
+  }
+  .brand .wordmark { font-weight: 600; }
+  .site-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+  }
+  .site-nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .site-nav a:hover,
+  .site-nav a[aria-current="page"] {
+    color: var(--accent);
+  }
   footer {
     margin-top: 48px;
     padding-top: 20px;
@@ -63,6 +99,17 @@
 </head>
 <body>
 <div class="wrap">
+  <header class="site-header">
+    <div class="brand">
+      <img class="mark" src="assets/logo-64.png" alt="" width="24" height="24">
+      <span class="wordmark">HanziDrip</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </header>
   <h1>Privacy Policy</h1>
   <p class="updated">Last updated: August 21, 2026</p>
 
@@ -106,7 +153,7 @@
   <p>Questions about this policy? Email <a href="mailto:kamonchanok.lh@gmail.com">kamonchanok.lh@gmail.com</a>.</p>
 
   <footer>
-    <p><a href="index.html">&larr; Back to Support</a></p>
+    <p><a href="index.html">&larr; Back to Home</a> &middot; <a href="support.html">Support</a></p>
     <p>&copy; 2026 HanziDrip.</p>
   </footer>
 </div>
