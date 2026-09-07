@@ -1,0 +1,8 @@
+/* Plus Jakarta Sans, self-hosted (weights 500–800 via one variable file). Latin + basic Latin-ext coverage, matching what fonts.googleapis.com served this site before. */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('fonts/PlusJakartaSans-variable.woff2') format('woff2');
+}
