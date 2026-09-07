@@ -6,255 +6,222 @@
 <title>HanziDrip — HSK 1-6 Chinese Vocabulary &amp; Grammar</title>
 <meta name="description" content="Every official HSK 1-6 word — 4,991 in all — in small daily batches, with grammar notes, examples, and dedicated Thai-language support. No ads, no accounts. HSK 1-2 free forever.">
 <link rel="canonical" href="https://kamonchanoklh.github.io/hanzidrip-pages/">
-<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-
+<link rel="icon" href="assets/logo-64.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HanziDrip">
 <meta property="og:url" content="https://kamonchanoklh.github.io/hanzidrip-pages/">
 <meta property="og:title" content="HanziDrip — HSK 1-6 Chinese Vocabulary &amp; Grammar">
 <meta property="og:description" content="Every official HSK 1-6 word — 4,991 in all — in small daily batches, with grammar notes, examples, and dedicated Thai-language support. No ads, no accounts. HSK 1-2 free forever.">
-<meta property="og:image" content="https://kamonchanoklh.github.io/hanzidrip-pages/assets/icon-1024.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
+<meta property="og:image" content="https://kamonchanoklh.github.io/hanzidrip-pages/assets/og-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="HanziDrip — HSK 1-6 Chinese Vocabulary &amp; Grammar">
 <meta name="twitter:description" content="Every official HSK 1-6 word — 4,991 in all — in small daily batches, with grammar notes, examples, and dedicated Thai-language support.">
-<meta name="twitter:image" content="https://kamonchanoklh.github.io/hanzidrip-pages/assets/icon-1024.png">
-
+<meta name="twitter:image" content="https://kamonchanoklh.github.io/hanzidrip-pages/assets/og-1200x630.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    color-scheme: light dark;
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #5a5a5a;
-    --accent: #2a5db0;
-    --border: #e4e4e4;
-    --card: #f7f8fa;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #14161a;
-      --text: #e9e9ec;
-      --muted: #a2a4ab;
-      --accent: #7aa6f0;
-      --border: #2a2d33;
-      --card: #1c1f24;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
-  .wrap {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 56px 24px 80px;
-  }
-  header.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .brand .mark {
-    width: 28px;
-    height: 28px;
-    border-radius: 22%;
-    display: block;
-  }
-  .brand .wordmark { font-size: 1.3rem; font-weight: 700; }
-  .site-nav {
-    display: flex;
-    gap: 20px;
-    font-size: 0.95rem;
-  }
-  .site-nav a {
-    color: var(--muted);
-    text-decoration: none;
-  }
-  .site-nav a:hover,
-  .site-nav a[aria-current="page"] {
-    color: var(--accent);
-  }
-
-  .hero { margin: 40px 0 8px; }
-  h1 {
-    font-size: 2rem;
-    line-height: 1.25;
-    margin: 0 0 16px;
-  }
-  .tagline {
-    color: var(--muted);
-    font-size: 1.1rem;
-    margin: 0 0 28px;
-    max-width: 52ch;
-  }
-  .cta-row {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 8px;
-  }
-  .store-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--text);
-    color: var(--bg);
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .cta-note {
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-
-  h2 { font-size: 1.15rem; margin: 48px 0 14px; }
-  p { margin: 0 0 14px; }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 8px;
-  }
-  a { color: var(--accent); }
-  ul { padding-left: 20px; margin: 0 0 14px; }
-  li { margin-bottom: 8px; }
-
-  .shots {
-    display: flex;
-    gap: 14px;
-    overflow-x: auto;
-    padding: 4px 4px 16px;
-    margin: 0 -4px;
-    -webkit-overflow-scrolling: touch;
-  }
-  .shots img {
-    height: 420px;
-    width: auto;
-    border-radius: 16px;
-    border: 1px solid var(--border);
-    flex: 0 0 auto;
-  }
-  .shots figure {
-    margin: 0;
-    text-align: center;
-  }
-  .shots figcaption {
-    color: var(--muted);
-    font-size: 0.82rem;
-    margin-top: 8px;
-    max-width: 190px;
-  }
-
-  footer {
-    margin-top: 56px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-  footer a { color: var(--muted); }
+  body { margin: 0; background: #F4F8F8; font-family: 'Plus Jakarta Sans', -apple-system, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; }
+  a { color: #2E7D8C; }
+  a:hover { color: #173C42; }
+  a:focus-visible, button:focus-visible { outline: 3px solid #D96B4C; outline-offset: 3px; border-radius: 6px; }
+  h1, h2 { text-wrap: balance; }
+  .hv1:hover{color: #2E7D8C !important}
+  .hv2:hover{color: #2E7D8C !important}
+  .hv3:hover{color: #2E7D8C !important}
+  .hv4:hover{background: #2E7D8C !important}
+  .hv5:hover{background: #2E7D8C !important}
+  .hv6:hover{background: #FFFFFF !important}
+  .hv7:hover{color: #173C42 !important}
+  .hv8:hover{color: #173C42 !important}
+  .hv9:hover{color: #173C42 !important}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="site-header">
-    <div class="brand">
-      <img class="mark" src="assets/logo-64.png" alt="" width="28" height="28">
-      <span class="wordmark">HanziDrip</span>
-    </div>
-    <nav class="site-nav">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
+
+
+<div style="background: #F4F8F8; color: #173C42; overflow-x: hidden">
+
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 18px clamp(20px, 5vw, 64px); background: rgba(244,248,248,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid #D8E4E5; position: sticky; top: 0; z-index: 20">
+    <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+      <img src="assets/logo-64.png" alt="HanziDrip" width="36" height="36" style="width: 36px; height: 36px; border-radius: 9px; display: block">
+      <span style="font: 800 21px 'Plus Jakarta Sans'; letter-spacing: -0.02em; color: #173C42">HanziDrip</span>
+    </a>
+    <nav style="display: flex; align-items: center; gap: clamp(16px, 3vw, 32px); flex-wrap: wrap">
+      <a href="index.html" style="font: 600 16px 'Plus Jakarta Sans'; color: #173C42; text-decoration: none" class="hv1">Home</a>
+      <a href="support.html" style="font: 600 16px 'Plus Jakarta Sans'; color: #3E6D75; text-decoration: none" class="hv2">Support</a>
+      <a href="privacy.html" style="font: 600 16px 'Plus Jakarta Sans'; color: #3E6D75; text-decoration: none" class="hv3">Privacy</a>
+      <a href="https://apps.apple.com/th/app/hanzidrip/id6803936114" style="padding: 11px 22px; border-radius: 999px; background: #173C42; color: #F4F8F8; font: 700 15px 'Plus Jakarta Sans'; text-decoration: none; white-space: nowrap" class="hv4">Get the app</a>
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>All 4,991 official HSK 1–6 words. A few at a time, every day.</h1>
-    <p class="tagline">HanziDrip is a focused daily-vocabulary app for HSK exam takers and serious Chinese learners — no curated subset, no ads, no accounts. Just the full word list, taught properly.</p>
-    <div class="cta-row">
-      <a class="store-badge" href="https://apps.apple.com/th/app/hanzidrip/id6803936114">Download on the App Store</a>
-      <span class="cta-note">HSK 1-2 free forever</span>
+  <section style="padding: clamp(48px, 7vw, 100px) clamp(20px, 5vw, 64px) clamp(40px, 5vw, 72px)">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: clamp(36px, 5vw, 72px); align-items: center">
+      <div style="flex: 1 1 420px; min-width: 0">
+        <div style="font: 700 14px 'Plus Jakarta Sans'; letter-spacing: 0.16em; text-transform: uppercase; color: #2E7D8C">HSK 1–6 · iPhone</div>
+        <h1 style="margin: 16px 0 0; font: 800 clamp(38px, 5.4vw, 66px)/1.04 'Plus Jakarta Sans'; letter-spacing: -0.04em; color: #173C42; text-wrap: balance">Every official HSK word. A few at a time, every day.</h1>
+        <p style="margin: 24px 0 0; font: 500 clamp(17px, 1.5vw, 20px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; max-width: 34em; text-wrap: pretty">A focused daily-vocabulary app for HSK exam takers and serious Chinese learners. The complete word list, taught properly — no curated subset, no ads, no accounts.</p>
+        <div style="margin-top: 34px; display: flex; flex-wrap: wrap; gap: 18px; align-items: center">
+          <a href="https://apps.apple.com/th/app/hanzidrip/id6803936114" style="display: inline-flex; align-items: center; padding: 19px 34px; border-radius: 999px; background: #173C42; color: #F4F8F8; font: 700 18px 'Plus Jakarta Sans'; text-decoration: none" class="hv5">Download on the App Store</a>
+          <span style="font: 600 16px 'Plus Jakarta Sans'; color: #2E7D8C">HSK 1–2 free forever</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0">
+        <div style="position: relative; overflow: hidden; background: #E4EDEE; border-radius: 40px; padding: clamp(32px, 4vw, 56px)">
+          <div style="position: absolute; top: -60px; right: -40px; width: 210px; height: 210px; background: #2E7D8C; opacity: 0.14; border-radius: 50% 50% 50% 8px; transform: rotate(135deg)"></div>
+          <div style="position: relative; display: flex; align-items: center; gap: 18px; margin-bottom: 22px">
+            <div style="width: 46px; height: 46px; background: #2E7D8C; border-radius: 50% 50% 50% 6px; transform: rotate(135deg)"></div>
+            <div style="width: 28px; height: 28px; background: #173C42; border-radius: 50% 50% 50% 4px; transform: rotate(135deg)"></div>
+            <div style="width: 14px; height: 14px; background: #D96B4C; border-radius: 50%"></div>
+          </div>
+          <div style="position: relative; font: 800 clamp(64px, 9vw, 120px)/0.92 'Plus Jakarta Sans'; letter-spacing: -0.05em; color: #2E7D8C">4,991</div>
+          <div style="position: relative; margin-top: 18px; font: 600 clamp(17px, 1.7vw, 22px)/1.4 'Plus Jakarta Sans'; color: #173C42; text-wrap: pretty">official HSK 1–6 words — all of them, none held back</div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <h2>Daily habit, real progress</h2>
-  <div class="card">
-    <ul>
-      <li>A handful of new words a day, never an overwhelming deck — tap through Still Learning, Almost There, or Learned as you go</li>
-      <li>Review mode brings words back with quick multiple-choice self-tests, timed before you'd forget them</li>
-      <li>Track your streak and see exactly where you stand across all six HSK levels</li>
-      <li>Home Screen and Lock Screen widgets put today's word one glance away</li>
-    </ul>
-  </div>
+  <section style="padding: 0 clamp(20px, 5vw, 64px) clamp(48px, 6vw, 80px)">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; border-top: 1px solid #D8E4E5; border-bottom: 1px solid #D8E4E5; padding: clamp(28px, 3vw, 40px) 0">
+      <div style="flex: 1 1 260px; min-width: 0">
+        <div style="font: 700 clamp(18px, 1.7vw, 21px) 'Plus Jakarta Sans'; color: #173C42">No account, ever</div>
+        <div style="margin-top: 8px; font: 500 16px/1.5 'Plus Jakarta Sans'; color: #3E6D75">No sign-up, no email. Open the app and start.</div>
+      </div>
+      <div style="flex: 1 1 260px; min-width: 0">
+        <div style="font: 700 clamp(18px, 1.7vw, 21px) 'Plus Jakarta Sans'; color: #173C42">No ads, no tracking</div>
+        <div style="margin-top: 8px; font: 500 16px/1.5 'Plus Jakarta Sans'; color: #3E6D75">No third-party analytics, no tracking SDKs.</div>
+      </div>
+      <div style="flex: 1 1 260px; min-width: 0">
+        <div style="font: 700 clamp(18px, 1.7vw, 21px) 'Plus Jakarta Sans'; color: #173C42">Your iCloud, not our server</div>
+        <div style="margin-top: 8px; font: 500 16px/1.5 'Plus Jakarta Sans'; color: #3E6D75">Progress syncs privately across your own devices.</div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Built for serious HSK study</h2>
-  <div class="card">
-    <ul>
-      <li>Every one of the 4,991 words comes with pinyin, definitions, grammar explanations, usage notes, common mistakes, and example sentences — cross-checked against known CC-CEDICT dictionary errors that trip up other Chinese-learning apps</li>
-      <li>Tap any word to hear it spoken instantly, with on-device text-to-speech — no internet required</li>
-      <li>Grammar notes written specifically for Thai speakers — direct comparisons to Thai word order, classifiers, and tone — complete for HSK 1-5, with HSK 6 rolling out level by level</li>
-      <li>Browse or search all 4,991 words anytime, and bookmark anything you want to revisit</li>
-    </ul>
-  </div>
+  
+  <section style="padding: 0 clamp(20px, 5vw, 64px) clamp(56px, 7vw, 96px)">
+    <div style="max-width: 1180px; margin: 0 auto">
+      <div style="font: 700 clamp(22px, 2.4vw, 30px) 'Plus Jakarta Sans'; letter-spacing: -0.02em; color: #173C42">All six levels, from day one</div>
+      <div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px">
+        <div style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-radius: 18px; background: #E4EDEE; font: 700 18px 'Plus Jakarta Sans'; color: #173C42">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background: #D9A32E"></span>HSK 1
+          <span style="font: 700 12px 'Plus Jakarta Sans'; letter-spacing: 0.1em; text-transform: uppercase; color: #2E7D8C">Free</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-radius: 18px; background: #E4EDEE; font: 700 18px 'Plus Jakarta Sans'; color: #173C42">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background: #2E7D8C"></span>HSK 2
+          <span style="font: 700 12px 'Plus Jakarta Sans'; letter-spacing: 0.1em; text-transform: uppercase; color: #2E7D8C">Free</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-radius: 18px; background: #E4EDEE; font: 700 18px 'Plus Jakarta Sans'; color: #173C42">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background: #D96B4C"></span>HSK 3
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-radius: 18px; background: #E4EDEE; font: 700 18px 'Plus Jakarta Sans'; color: #173C42">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background: #B5453A"></span>HSK 4
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-radius: 18px; background: #E4EDEE; font: 700 18px 'Plus Jakarta Sans'; color: #173C42">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background: #173C42"></span>HSK 5
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-radius: 18px; background: #E4EDEE; font: 700 18px 'Plus Jakarta Sans'; color: #173C42">
+          <span style="width: 14px; height: 14px; border-radius: 50%; background: #6B5B95"></span>HSK 6
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section style="padding: 0 clamp(20px, 5vw, 64px) clamp(56px, 7vw, 96px)">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 72px); align-items: center">
+      <div style="flex: 1 1 380px; min-width: 0">
+        <h2 style="margin: 0; font: 800 clamp(28px, 3.4vw, 44px)/1.1 'Plus Jakarta Sans'; letter-spacing: -0.03em; color: #173C42; text-wrap: balance">Daily habit, real progress</h2>
+        <ul style="margin: 24px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px">
+          <li style="font: 500 clamp(16px, 1.4vw, 18px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; padding-left: 26px; position: relative; text-wrap: pretty"><span style="position: absolute; left: 0; top: 9px; width: 11px; height: 11px; background: #2E7D8C; border-radius: 50% 50% 50% 2px; transform: rotate(135deg)"></span>A handful of new words a day, never an overwhelming deck — tap through Still Learning, Almost There, or Learned as you go</li>
+          <li style="font: 500 clamp(16px, 1.4vw, 18px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; padding-left: 26px; position: relative; text-wrap: pretty"><span style="position: absolute; left: 0; top: 9px; width: 11px; height: 11px; background: #2E7D8C; border-radius: 50% 50% 50% 2px; transform: rotate(135deg)"></span>Track your streak and see exactly where you stand across all six levels</li>
+          <li style="font: 500 clamp(16px, 1.4vw, 18px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; padding-left: 26px; position: relative; text-wrap: pretty"><span style="position: absolute; left: 0; top: 9px; width: 11px; height: 11px; background: #2E7D8C; border-radius: 50% 50% 50% 2px; transform: rotate(135deg)"></span>Home Screen and Lock Screen widgets put today's word one glance away</li>
+        </ul>
+      </div>
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center; gap: 20px">
+        <img src="screenshots/01_today.png" alt="HanziDrip Today screen showing an HSK 1 word card with pinyin and Still Learning / Almost There / Learned buttons" loading="lazy" style="width: 100%; max-width: 320px; height: auto; display: block; border-radius: 32px; box-shadow: 0 24px 60px rgba(23,60,66,0.16)">
+      </div>
+    </div>
+  </section>
 
-  <h2>Private by design</h2>
-  <div class="card">
-    <ul>
-      <li>No account, no sign-up, no email — just open the app and start</li>
-      <li>No ads, no third-party analytics, no tracking SDKs</li>
-      <li>Your progress syncs privately across your own devices through your own iCloud account — it never touches a server we run</li>
-    </ul>
-  </div>
+  <section style="padding: 0 clamp(20px, 5vw, 64px) clamp(56px, 7vw, 96px)">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap-reverse; gap: clamp(32px, 5vw, 72px); align-items: center">
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+        <img src="screenshots/02_review.png" alt="HanziDrip Review screen with a multiple-choice self-test asking what a word means" loading="lazy" style="width: 100%; max-width: 320px; height: auto; display: block; border-radius: 32px; box-shadow: 0 24px 60px rgba(23,60,66,0.16)">
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0">
+        <h2 style="margin: 0; font: 800 clamp(28px, 3.4vw, 44px)/1.1 'Plus Jakarta Sans'; letter-spacing: -0.03em; color: #173C42; text-wrap: balance">Built for serious HSK study</h2>
+        <ul style="margin: 24px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px">
+          <li style="font: 500 clamp(16px, 1.4vw, 18px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; padding-left: 26px; position: relative; text-wrap: pretty"><span style="position: absolute; left: 0; top: 9px; width: 11px; height: 11px; background: #2E7D8C; border-radius: 50% 50% 50% 2px; transform: rotate(135deg)"></span>Every word comes with pinyin, definitions, grammar explanations, usage notes, common mistakes, and example sentences — cross-checked against known CC-CEDICT dictionary errors that trip up other apps</li>
+          <li style="font: 500 clamp(16px, 1.4vw, 18px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; padding-left: 26px; position: relative; text-wrap: pretty"><span style="position: absolute; left: 0; top: 9px; width: 11px; height: 11px; background: #2E7D8C; border-radius: 50% 50% 50% 2px; transform: rotate(135deg)"></span>Review mode brings words back with quick self-tests, timed before you'd forget them</li>
+          <li style="font: 500 clamp(16px, 1.4vw, 18px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; padding-left: 26px; position: relative; text-wrap: pretty"><span style="position: absolute; left: 0; top: 9px; width: 11px; height: 11px; background: #2E7D8C; border-radius: 50% 50% 50% 2px; transform: rotate(135deg)"></span>Tap any word to hear it spoken instantly with on-device speech — no internet required</li>
+          <li style="font: 500 clamp(16px, 1.4vw, 18px)/1.55 'Plus Jakarta Sans'; color: #3E6D75; padding-left: 26px; position: relative; text-wrap: pretty"><span style="position: absolute; left: 0; top: 9px; width: 11px; height: 11px; background: #2E7D8C; border-radius: 50% 50% 50% 2px; transform: rotate(135deg)"></span>Browse or search all 4,991 words anytime, and bookmark anything you want to revisit</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Free to start, Premium when you're ready</h2>
-  <div class="card">
-    <p style="margin-bottom:0">HSK 1 and HSK 2 — the first ~300 words most beginners need — are free, forever. Premium unlocks HSK 3-6, unlimited review, and a detailed progress breakdown by level.</p>
-  </div>
+  
+  <section style="padding: 0 clamp(20px, 5vw, 64px) clamp(56px, 7vw, 96px)">
+    <div style="max-width: 1180px; margin: 0 auto; background: #173C42; border-radius: 40px; padding: clamp(36px, 5vw, 72px); position: relative; overflow: hidden">
+      <div style="position: absolute; bottom: -140px; right: -100px; width: 340px; height: 340px; background: #D96B4C; opacity: 0.16; border-radius: 50% 50% 50% 12px; transform: rotate(135deg)"></div>
+      <div style="position: relative; display: inline-block; padding: 10px 20px; border-radius: 999px; background: #D96B4C; color: #FFF3EE; font: 700 14px 'Plus Jakarta Sans'; letter-spacing: 0.12em; text-transform: uppercase">For Thai speakers</div>
+      <h2 style="position: relative; margin: 22px 0 0; font: 800 clamp(28px, 3.4vw, 44px)/1.12 'Plus Jakarta Sans'; letter-spacing: -0.03em; color: #F4F8F8; max-width: 22em; text-wrap: balance">Grammar notes written for Thai speakers, not translated at them</h2>
+      <p style="position: relative; margin: 20px 0 0; font: 500 clamp(16px, 1.5vw, 19px)/1.6 'Plus Jakarta Sans'; color: rgba(244,248,248,0.72); max-width: 46em; text-wrap: pretty">Direct comparisons to Thai word order, classifiers, and tone — complete for HSK 1–5, with HSK 6 rolling out level by level.</p>
+    </div>
+  </section>
+  
+  <section style="padding: 0 clamp(20px, 5vw, 64px) clamp(56px, 7vw, 96px)">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 72px); align-items: center">
+      <div style="flex: 1 1 380px; min-width: 0">
+        <h2 style="margin: 0; font: 800 clamp(28px, 3.4vw, 44px)/1.1 'Plus Jakarta Sans'; letter-spacing: -0.03em; color: #173C42; text-wrap: balance">Free to start, Premium when you're ready</h2>
+        <p style="margin: 20px 0 0; font: 500 clamp(16px, 1.5vw, 19px)/1.6 'Plus Jakarta Sans'; color: #3E6D75; max-width: 34em; text-wrap: pretty">HSK 1 and HSK 2 — the first ~300 words most beginners need — are free, forever.</p>
+        <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 20px">
+          <div style="flex: 1 1 240px; min-width: 0; background: #F4F8F8; border: 1px solid #C9DADC; border-radius: 28px; padding: 30px">
+            <div style="font: 700 13px 'Plus Jakarta Sans'; letter-spacing: 0.14em; text-transform: uppercase; color: #2E7D8C">Free</div>
+            <div style="margin-top: 14px; font: 700 24px 'Plus Jakarta Sans'; letter-spacing: -0.02em; color: #173C42">HSK 1 &amp; HSK 2</div>
+            <div style="margin-top: 12px; font: 500 16px/1.5 'Plus Jakarta Sans'; color: #3E6D75">About 300 words, free forever — no account needed.</div>
+          </div>
+          <div style="flex: 1 1 240px; min-width: 0; background: #E4EDEE; border: 1px solid #C9DADC; border-radius: 28px; padding: 30px">
+            <div style="font: 700 13px 'Plus Jakarta Sans'; letter-spacing: 0.14em; text-transform: uppercase; color: #D96B4C">Premium</div>
+            <div style="margin-top: 14px; font: 700 24px 'Plus Jakarta Sans'; letter-spacing: -0.02em; color: #173C42">HSK 3–6 unlocked</div>
+            <div style="margin-top: 12px; font: 500 16px/1.5 'Plus Jakarta Sans'; color: #3E6D75">Unlimited review and a detailed progress breakdown by level.</div>
+          </div>
+        </div>
+      </div>
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+        <img src="screenshots/04_progress.png" alt="HanziDrip Progress screen showing current streak, overall progress out of 4,991 words, and a words-introduced breakdown" loading="lazy" style="width: 100%; max-width: 320px; height: auto; display: block; border-radius: 32px; box-shadow: 0 24px 60px rgba(23,60,66,0.16)">
+      </div>
+    </div>
+  </section>
 
-  <h2>See it in action</h2>
-  <div class="shots">
-    <figure>
-      <img src="screenshots/01_today.png" alt="HanziDrip Today screen showing an HSK 1 word card with pinyin, a Grammar &amp; examples button, and Still Learning / Almost There / Learned buttons" loading="lazy">
-      <figcaption>Today's words, one card at a time</figcaption>
-    </figure>
-    <figure>
-      <img src="screenshots/02_review.png" alt="HanziDrip Review screen with a multiple-choice self-test asking what a word means" loading="lazy">
-      <figcaption>Review mode: quick self-tests</figcaption>
-    </figure>
-    <figure>
-      <img src="screenshots/03_today_complete.png" alt="HanziDrip screen confirming today's 10 words are done, with a streak counter and a list of today's learned words" loading="lazy">
-      <figcaption>A finished day, streak intact</figcaption>
-    </figure>
-    <figure>
-      <img src="screenshots/04_progress.png" alt="HanziDrip Progress screen showing current streak, overall progress out of 4,991 words, and a words-introduced breakdown" loading="lazy">
-      <figcaption>Progress across all 4,991 words</figcaption>
-    </figure>
-  </div>
+  <section style="padding: 0 clamp(20px, 5vw, 64px) clamp(56px, 7vw, 96px)">
+    <div style="max-width: 1180px; margin: 0 auto; background: #2E7D8C; border-radius: 40px; padding: clamp(40px, 6vw, 84px); text-align: center; position: relative; overflow: hidden">
+      <div style="position: absolute; top: -120px; left: -60px; width: 300px; height: 300px; background: #F4F8F8; opacity: 0.1; border-radius: 50% 50% 50% 10px; transform: rotate(135deg)"></div>
+      <h2 style="position: relative; margin: 0 auto; font: 800 clamp(28px, 3.6vw, 48px)/1.1 'Plus Jakarta Sans'; letter-spacing: -0.03em; color: #FFFFFF; max-width: 20em; text-wrap: balance">Start with today's words</h2>
+      <p style="position: relative; margin: 18px auto 0; font: 500 clamp(16px, 1.5vw, 19px)/1.55 'Plus Jakarta Sans'; color: rgba(255,255,255,0.88); max-width: 34em">Free through HSK 2. No account, no ads, nothing to cancel if you stop.</p>
+      <a href="https://apps.apple.com/th/app/hanzidrip/id6803936114" style="position: relative; display: inline-flex; align-items: center; margin-top: 32px; padding: 19px 36px; border-radius: 999px; background: #F4F8F8; color: #173C42; font: 700 18px 'Plus Jakarta Sans'; text-decoration: none" class="hv6">Download on the App Store</a>
+    </div>
+  </section>
 
-  <footer>
-    <p><a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
-    <p>&copy; 2026 HanziDrip.</p>
+  <footer style="border-top: 1px solid #D8E4E5; padding: clamp(32px, 4vw, 48px) clamp(20px, 5vw, 64px)">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between">
+      <div style="display: flex; align-items: center; gap: 12px">
+        <img src="assets/logo-64.png" alt="" width="28" height="28" style="width: 28px; height: 28px; border-radius: 7px; display: block">
+        <span style="font: 500 15px 'Plus Jakarta Sans'; color: #3E6D75">© 2026 HanziDrip</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px">
+        <a href="support.html" style="font: 600 15px 'Plus Jakarta Sans'; color: #2E7D8C; text-decoration: none" class="hv7">Support</a>
+        <a href="privacy.html" style="font: 600 15px 'Plus Jakarta Sans'; color: #2E7D8C; text-decoration: none" class="hv8">Privacy Policy</a>
+        <a href="https://apps.apple.com/th/app/hanzidrip/id6803936114" style="font: 600 15px 'Plus Jakarta Sans'; color: #2E7D8C; text-decoration: none" class="hv9">App Store</a>
+      </div>
+    </div>
   </footer>
+
 </div>
+
+
 </body>
 </html>
